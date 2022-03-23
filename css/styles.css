@@ -62,6 +62,7 @@ body {
 .navegador2 li a {
     color: #D51C29;
     text-decoration: none;
+    padding: 0 2rem 0 2rem;
 }
 .navegador li a {
     color: black;

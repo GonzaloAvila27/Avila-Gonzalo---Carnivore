@@ -16,9 +16,9 @@
 <body>
     <div class="contenedor">
 
-        <header>
+        <header class="container">
             <h1 id="TOP" class="logo">CARNIVORE</h1>
-            <nav class="nav">
+            <nav class="nav row col-12">
                 <ul class="navegador">
                     <li><a href="./index.html">TIENDA</a></li>
                     <li><a href="./recetas.html">RECETAS</a></li>
@@ -28,36 +28,38 @@
             </nav>
         </header>
         <hr>
-        <main>
-            <article class="receta">
-                <div class="imagen">
-                    <a href=""><img src="./multimedia/recetas/receta01.jpg" alt="filete"></a>
-                </div>
-                <div class="info">
-                    <div class="titulo">Filete mignon con salsa bearnesa</div>
-                    <div class="tipo">Cena</div> <!-- https://www.kiwilimon.com/blog/recomendaciones-cocina/top-5-recetas-para-carnivoros -->
-                </div>
-            </article>
-            <article class="receta">
-                <div class="imagen">
-                    <a href=""><img src="./multimedia/recetas/receta02.jpg" alt="caldo"></a>
-                </div>
-                <div class="info">
+        <main class="container">
+            <section class="row mx-auto">
+                <article class="receta col-lg-3 col-sm-12">
+                    <div class="imagen">
+                        <a href=""><img src="./multimedia/recetas/receta01.jpg" alt="filete"></a>
+                    </div>
+                    <div class="info text-center">
+                        <div class="titulo">Filete mignon con salsa bearnesa</div>
+                        <div class="tipo">Cena</div> <!-- https://www.kiwilimon.com/blog/recomendaciones-cocina/top-5-recetas-para-carnivoros -->
+                    </div>
+                </article>
+                <article class="receta col-lg-3 col-sm-12">
+                    <div class="imagen">
+                        <a href=""><img src="./multimedia/recetas/receta02.jpg" alt="caldo"></a>
+                    </div>
+                <div class="info text-center">
                     <div class="titulo">CALDO DE RES</div>
                     <div class="tipo">Cena</div>
                 </div>
             </article>
-            <article class="receta">
+            <article class="receta col-lg-3 col-sm-12">
                 <div class="imagen">
                     <a href=""><img src="./multimedia/recetas/receta01.jpg" alt="filete"></a>
                 </div>
-                <div class="info">
+                <div class="info text-center">
                     <div class="titulo">Filete mignon con salsa bearnesa</div>
                     <div class="tipo">Cena</div>
                 </div>
             </article>
+        </section>
         </main>
-        <footer class="footer">
+        <footer class="footer row col-12">
             <ul>
                 <li><a href=""><img src="/multimedia/iconos/facebook.png" alt="faceb"></a></li>
                 <li><a href=""><img src="/multimedia/iconos/instagram.png" alt="inst"></a></li>
