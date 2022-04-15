@@ -29,6 +29,11 @@
         color: $BLACKY;
         text-decoration: none;
     }
+    @media screen and (max-width: 480px) {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: no-wrap;              
+}
 }
 .navegador2 {
     color: $WHITY;
@@ -44,5 +49,4 @@
     }
 
 }
-
 
