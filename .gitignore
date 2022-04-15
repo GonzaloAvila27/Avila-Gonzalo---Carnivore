@@ -104,3 +104,7 @@ dist
 .tern-port
 
 backup.css
+boots
+
+dist
+scss boots
