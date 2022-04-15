@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Ultra&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/estilosviesjos.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>CARNIVORE</title>
 </head>
 <body>
  <!-- NAVEGADOR -->   
     <div class="contenedor">
         <header class="header">
-            <h1 id="TOP" class="logo animate__animated animate__slideInDown col-4">CARNIVORE</h1>
+            <img src="./multimedia/svg/logocompleto.svg" id="TOP" class="logo animate__animated animate__slideInDown" alt="LogoCarnivore">
             <nav class="nav container">
                 <ul class="navegador animate__animated animate__bounceIn">
                     <li><a href="./index.html">TIENDA</a></li>
@@ -32,75 +32,77 @@
             </nav>
         </header>
 <!-- PRODUCTOS -->
-            <main class="padre">
-            <article class="producto">
-                <div><a href=""><img src="./multimedia/producto/vacuno/asado-new.jpg" alt="asado" id="vacuno">
-                    <h5>Asado</h5>
-                    <p>$1.000 /kg</p>
-                    <p class="tipo">asado vacuno</p>
-                </div>
-            </article>
-            <article class="producto">
-                <div><a href=""><img src="./multimedia/producto/vacuno/bife-ancho_1.jpg" alt="bifeAncho"></a>
-                    <h5>Bife Ancho</h5>
-                    <p>$1.000 /kg</p>
-                    <p class="tipo">asado vacuno</p>
-                </div>
-            </article>
-            <article class="producto">
+            <main>
+                <section class="listaproducto">
+
+                    <article class="producto">
+                        <div><a href=""><img src="./multimedia/producto/vacuno/asado-new.jpg" alt="asado" id="vacuno">
+                            <h5>Asado</h5>
+                            <p>$1.200 /kg</p>
+                            <p class="tipo">asado vacuno</p>
+                        </div>
+                    </article>
+                    <article class="producto">
+                        <div><a href=""><img src="./multimedia/producto/vacuno/bife-ancho_1.jpg" alt="bifeAncho"></a>
+                            <h5>Bife Ancho</h5>
+                            <p>$850 /kg</p>
+                            <p class="tipo">asado vacuno</p>
+                        </div>
+                    </article>
+                    <article class="producto">
                 <div><a href=""><img src="./multimedia/producto/vacuno/colita_4.jpg" alt="cuadril"></a>
                     <h5>Colita de Cuadril</h5>
-                    <p>$2.000 /kg</p>
+                    <p>$950 /kg</p>
                     <p class="tipo">asado vacuno</p>
                 </div>
             </article>
             <article class="producto">
                 <div><a href=""><img src="./multimedia/producto/vacuno/cuadrada_1.jpg" alt="cuadrada"></a>
                     <h5>Cuadrada</h5>
-                    <p>$1.000 /kg</p>
+                    <p>$820 /kg</p>
                     <p class="tipo">asado vacuno</p>
                 </div>
             </article>
             <article class="producto">
                 <div><a href=""><img src="./multimedia/producto/vacuno/roast-beef_1.jpg" alt="RoastBeef"></a>
                     <h5>Roast Beef</h5>
-                    <p>$2.000 /kg</p>
+                    <p>$1.200 /kg</p>
                     <p class="tipo">asado vacuno</p>
                 </div>
             </article>            
             <article class="producto">
                 <div><a href=""><img src="./multimedia/producto/vacuno/vacio_2.jpg" alt="vacio"></a>
-                <div class="desc">
-                    <h5>Vacio</h5>
-                    <p>$1.000 /kg</p>
-                    <p class="tipo">asado vacuno</p>
-                </div>
-            </article>
-            <article class="producto">
+                    <div class="desc">
+                        <h5>Vacio</h5>
+                        <p>$1.000 /kg</p>
+                        <p class="tipo">asado vacuno</p>
+                    </div>
+                </article>
+                <article class="producto">
                 <div><a href=""><img src="./multimedia/producto/aves/brochete-pollo.jpg" alt="brochetes" id="Aves"></a>
                     <h5>brochetes</h5>
-                    <p>$1.000 /kg</p>
+                    <p>$1.200 /kg</p>
                     <p class="tipo">pollo</p>
                 </div>
             </article>
             <article class="producto">
                 <div><a href=""><img src="./multimedia/producto/aves/churrasquito-pollo.jpg" alt="pollo"></a>
                     <h5>Churrasquito de pollo</h5>
-                    <p>$1.000 /kg</p>
-                    <p class="tipo">pollo</p>
+                    <p>$500 /kg</p>
+                    <p class="tipo">contramuslo deshuesado</p>
                 </div>
             </article>
             <article class="producto">
                 <div><a href=""><img src="./multimedia/producto/aves/nuggets_1.jpg" alt="pollo"></a>
                     <h5>Nuggets de Pollo</h5>
-                    <p>$1.000 /kg</p>
+                    <p>$700 /kg</p>
                     <p class="tipo">pollo</p>
                 </div>
             </article>
             <article class="producto">
                 <div><a href=""><img src="./multimedia/producto/aves/pata-muslo.jpg" alt="pollo"></a>
                     <h5>Pata y muslo</h5>
-                    <p>$1.000 /kg</p>
+                    <p>$800 /kg</p>
                     <p class="tipo">pollo</p>
                 </div>
             </article>
@@ -114,39 +116,47 @@
             <article class="producto">
                 <div><a href=""><img src="./multimedia/producto/aves/supremas-2.jpg" alt="pollo"></a>
                     <h5>Supremas de pollo</h5>
-                    <p>$1.000 /kg</p>
+                    <p>$900 /kg</p>
                     <p class="tipo">pollo</p>
                 </div>
             </article>
             <article class="producto">
                 <div><a href=""><img src="./multimedia/producto/cerdo/bondiola_2.jpg" alt="bondiola" id="cerdo"></a>
                     <h5>Bondiolita</h5>
-                    <p>$1.000 /kg</p>
+                    <p>$1.200 /kg</p>
                     <p class="tipo">cerdo</p>
                 </div>
             </article>
             <article class="producto">
                 <div><a href=""><img src="./multimedia/producto/cerdo/carre-deshuesado.jpg" alt="cerdo"></a>
                     <h5>Carré deshuesado</h5>
-                    <p>$1.000 /kg</p>
+                    <p>$1.500 /kg</p>
                     <p class="tipo">cerdo</p>
                 </div>
             </article>
             <article class="producto">
                 <div><a href=""><img src="./multimedia/producto/cerdo/matambre_1.jpg" alt="cerdo"></a>
                     <h5>Matambrito de cerdo</h5>
-                    <p>$1.000 /kg</p>
+                    <p>$1.800 /kg</p>
                     <p class="tipo">cerdo</p>
                 </div>
             </article>
+        </section>
+            
+            <!-- Nosotros
+        <section class="AboutUS listaproducto">
+                <img src="./multimedia/iconos/opinión-panorámica-vacas-58759930.jpg" alt="vacas en el campo" class="portada producto">
+                
+                <h1>Sobre CARNIVORE</h1>
+                
+                <p>Con productos finamente criados en amplios campos de pastoreo Magnam, sed optio, provident vero officia odio atque accusamus eos fuga dicta sit, quam ut. Quod cupiditate expedita doloremque. Ad, laborum amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores hic est quod aliquid necessitatibus praesentium dolore illo beatae. Omnis vero necessitatibus reprehenderit distinctio maiores at nisi, enim harum quasi.</p>
+        </section>    -->
+            
+            <!-- Contacto -->
+            
+            
+            
         </main>
-
-<!-- Nosotros -->
-
-
-<!-- Contacto -->
-
-
         <footer class="footer">
             <ul>
                 <li><a href=""><img src="/multimedia/iconos/facebook.png" alt="faceb"></a></li>

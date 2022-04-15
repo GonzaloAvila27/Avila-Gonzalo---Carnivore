@@ -1,0 +1,48 @@
+
+
+
+
+.nav { 
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-flow: row no-wrap;
+        }
+        a{
+            font-size: 2rem;
+            text-decoration: none;
+            padding: 1rem 1rem;
+            display: inline-block;
+        }
+        a:hover{
+            background-color: $BLACKY;
+            font-weight: bold;
+        }
+}
+
+
+.navegador {
+    background-color: $CARNE;
+    color: $WHITY;
+    li a {
+        color: $BLACKY;
+        text-decoration: none;
+    }
+}
+.navegador2 {
+    color: $WHITY;
+    background-color: $BLACKY;
+    li a {
+        color: $CARNE;
+        text-decoration: none;
+        padding: 0 2rem 0 2rem;
+    }
+    li a:hover {
+        background-color: $CARNE;
+        color: $WHITY;
+    }
+
+}
+
+

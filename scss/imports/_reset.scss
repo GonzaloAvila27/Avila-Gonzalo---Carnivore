@@ -1,0 +1,81 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 375px;
+    width: 100%;
+}
+
+
+body {
+    background-image: url(/multimedia/svg/fondohuesos.svg);
+    align-items: center;
+     z-index: -5;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: r 3fr 40vh;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    font-family: $TEXT;
+     margin: 2rem auto;
+    padding-left: 0rem;
+    background-color: $WHITY;
+    grid-template-areas: 
+    "nav"
+    "productos"
+    "footer"    ;
+    border-radius: 1.5rem;
+    box-shadow: 2vh 2vh 5vh $BLACKY;
+    }
+  
+    a {text-decoration: none;
+    }
+    ul {list-style: none;}
+
+
+    @media screen and (max-width: 480px) {
+        body{
+            background-color: beige;
+    }
+   
+    .logo {
+        font-size: 2rem;
+        letter-spacing: auto;
+    }
+    .nav ul a{
+        font-size: 1rem;
+        text-decoration: none;
+        padding: 0.5rem 0.5rem;
+    }
+}
+@media screen and (max-width: 780px) {
+    body{
+        background-color: beige;
+}
+
+.logo {
+    font-size: 4rem;
+    letter-spacing: auto;
+}
+.nav ul a{
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+}
+}
+    
+
+h5 {
+    font-size: 2rem;
+   }
+   .padre .producto div p {
+       font-size: 0.9rem;
+       color: rgb(8, 8, 8);
+   }
+   
