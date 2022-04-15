@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #D51C29;
+    background-image: url(/multimedia/fondo/fondohuesos.svg);
     align-items: center;
      z-index: -5;
 }
@@ -25,6 +25,9 @@ body {
     "footer"    ;
     /* border: fuchsia solid 3px; */
     border-radius: 2rem;
+
+  box-shadow: 2vh 2vh 5vh rgb(0, 0, 0);
+
     }
 .logo {
     text-align: center;
@@ -53,11 +56,11 @@ body {
 }
 .navegador {
     background-color: #D51C29;
-    color: aliceblue;
+    color: #f0f0f0;
 }
 .navegador2 {
     color: white;
-    background-color: black;
+    background-color: #000000;
 }
 .navegador2 li a {
     color: #D51C29;
