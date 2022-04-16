@@ -18,7 +18,7 @@ body {
 
 .contenedor {
     display: grid;
-    grid-template-rows: r 3fr 40vh;
+    grid-template-rows: r 4fr 40vh;
     width: 90%;
     align-items: center;
     text-align: center;
@@ -28,7 +28,7 @@ body {
     background-color: $WHITY;
     grid-template-areas: 
     "nav"
-    "productos"
+    "productomain"
     "footer"    ;
     border-radius: 1.5rem;
     box-shadow: 2vh 2vh 5vh $BLACKY;
@@ -41,7 +41,7 @@ body {
 
     @media screen and (max-width: 480px) {
         body{
-            background-color: beige;
+            background-color: $WHITY;
     }
    
     .logo {
@@ -56,7 +56,7 @@ body {
 }
 @media screen and (max-width: 780px) {
     body{
-        background-color: beige;
+        background-color: $WHITY;
 }
 
 .logo {
@@ -76,6 +76,6 @@ h5 {
    }
    .padre .producto div p {
        font-size: 0.9rem;
-       color: rgb(8, 8, 8);
+       color: $BLACKY;
    }
    

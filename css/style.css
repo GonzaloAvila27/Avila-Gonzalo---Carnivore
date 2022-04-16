@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -21,8 +22,8 @@ body {
 .contenedor {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: r 3fr 40vh;
-      grid-template-rows: r 3fr 40vh;
+  -ms-grid-rows: r 4fr 40vh;
+      grid-template-rows: r 4fr 40vh;
   width: 90%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -31,8 +32,8 @@ body {
   font-family: "Anton", sans-serif;
   margin: 2rem auto;
   padding-left: 0rem;
-  background-color: #f0f0f0;
-      grid-template-areas: "nav" "productos" "footer";
+  background-color: #fffed9;
+      grid-template-areas: "nav" "productomain" "footer";
   border-radius: 1.5rem;
   -webkit-box-shadow: 2vh 2vh 5vh #000000;
           box-shadow: 2vh 2vh 5vh #000000;
@@ -48,7 +49,7 @@ ul {
 
 @media screen and (max-width: 480px) {
   body {
-    background-color: beige;
+    background-color: #fffed9;
   }
   .logo {
     font-size: 2rem;
@@ -63,7 +64,7 @@ ul {
 
 @media screen and (max-width: 780px) {
   body {
-    background-color: beige;
+    background-color: #fffed9;
   }
   .logo {
     font-size: 4rem;
@@ -82,73 +83,64 @@ h5 {
 
 .padre .producto div p {
   font-size: 0.9rem;
-  color: #080808;
+  color: #000000;
 }
 
-.nav ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row no-wrap;
-          flex-flow: row no-wrap;
-}
-
-.nav a {
-  font-size: 2rem;
-  text-decoration: none;
-  padding: 1rem 1rem;
-  display: inline-block;
-}
-
-.nav a:hover {
-  background-color: #000000;
-  font-weight: bold;
+.nav {
+  height: 70px;
+  line-height: 70px;
+  margin-bottom: 1%;
 }
 
 .navegador {
+  list-style: none;
   background-color: #D51C29;
-  color: #f0f0f0;
 }
 
-.navegador li a {
+.navegador a {
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
   color: #000000;
   text-decoration: none;
 }
 
-@media screen and (max-width: 480px) {
-  .navegador {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: no-wrap;
-        flex-wrap: no-wrap;
-  }
-}
-
-.navegador2 {
-  color: #f0f0f0;
+.navegador a:hover {
   background-color: #000000;
+  font-weight: bold;
+  color: #fffed9;
 }
 
-.navegador2 li a {
-  color: #D51C29;
-  text-decoration: none;
-  padding: 0 2rem 0 2rem;
-}
-
-.navegador2 li a:hover {
+label {
+  font-size: 2rem;
+  line-height: 70px;
+  display: none;
+  color: #fffed9;
   background-color: #D51C29;
-  color: #f0f0f0;
+}
+
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 620px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .navegador {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .navegador a {
+    border-bottom: 0.1rem solid #fffed9;
+    margin: 0;
+  }
+  #toggle:checked + .navegador {
+    display: inline-block;
+  }
 }
 
 .listaproducto {
@@ -171,7 +163,7 @@ h5 {
 }
 
 .listaproducto article p {
-  font-size: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .producto div img {
@@ -195,6 +187,41 @@ h5 {
 .padre .producto div p {
   font-size: 0.9rem;
   color: #080808;
+}
+
+.AboutUs {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.AboutUs__img {
+  background-color: #cccccc;
+  background-image: url(/multimedia/iconos/opinión-panorámica-vacas-58759930.jpg);
+  background-repeat: no-repeat;
+  height: 10rem;
+  border-radius: 5%;
+  width: 80%;
+}
+
+.AboutUs__title {
+  text-align: center;
+  font-family: "Ultra", serif;
+  font-size: 5rem;
+  padding-top: 2rem;
+}
+
+.AboutUs__p {
+  font-size: 1.2rem;
+  font-family: "Anton", sans-serif;
+}
+
+.fondoerror {
+  width: 100%;
+  height: 100%;
+  background-color: #D51C29;
 }
 
 .receta {
@@ -255,7 +282,7 @@ footer ul {
   padding-left: 0px;
   width: 100%;
   height: 6rem;
-  color: #f0f0f0;
+  color: #fffed9;
 }
 
 .footer ul li:hover {

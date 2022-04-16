@@ -3,49 +3,60 @@
 
 
 .nav { 
-        ul{
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-flow: row no-wrap;
-        }
-        a{
-            font-size: 2rem;
-            text-decoration: none;
-            padding: 1rem 1rem;
-            display: inline-block;
-        }
-        a:hover{
-            background-color: $BLACKY;
-            font-weight: bold;
-        }
-}
+            
+            height: 70px;
+            line-height: 70px;
+            margin-bottom: 1%;
+    }
 
 
 .navegador {
-    background-color: $CARNE;
-    color: $WHITY;
-    li a {
+
+            list-style: none;
+            background-color: $CARNE;
+            
+    a {
+        font-size: 2rem;
+        text-decoration: none;
+        padding: 1rem 1rem;
+        border-radius: 0.5rem;
         color: $BLACKY;
         text-decoration: none;
     }
-    @media screen and (max-width: 480px) {
-        display:flex;
-        flex-direction: column;
-        flex-wrap: no-wrap;              
-}
-}
-.navegador2 {
-    color: $WHITY;
-    background-color: $BLACKY;
-    li a {
-        color: $CARNE;
-        text-decoration: none;
-        padding: 0 2rem 0 2rem;
-    }
-    li a:hover {
-        background-color: $CARNE;
+    a:hover{
+        background-color: $BLACKY;
+        font-weight: bold;
         color: $WHITY;
+    }
+
+}
+label {
+    font-size: 2rem;
+    line-height: 70px;
+    display: none;
+    color: $WHITY;
+    background-color: $CARNE;
+}
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 620px){
+    label {
+        display: block;
+        cursor: pointer;
+          }
+    .navegador {
+        text-align: center;
+        width:100%;
+        display: none;
+        a {
+            border-bottom: 0.1rem solid $WHITY;
+            margin: 0;
+        }
+    }
+    #toggle:checked + .navegador {
+        display: inline-block;
     }
 
 }
