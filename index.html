@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="./multimedia/favicom/favicon-32x32.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
 <body>
  <!-- NAVEGADOR -->   
     <div class="contenedor">
-        <header class="header">
+        <header class="header" id="top">
             <img src="./multimedia/svg/logocompleto.svg" id="TOP" class="logo animate__animated animate__slideInDown logo" alt="LogoCarnivore">
             <nav class="nav animate__animated animate__bounceIn">
                 <label for="toggle">&#9776</label>
@@ -30,124 +31,260 @@
         </header>
 <!-- PRODUCTOS -->
             <main>
-                <section class="listaproducto productomain">
+                <section class="listaproducto">
 
                     <article class="producto">
-                        <div   id="vacuno"><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/vacuno/asado-new.jpg" alt="asado" id="vacuno">
-                            <h5>Asado</h5>
-                            <p>$1.200 /kg</p>
-                            <p class="tipo">asado vacuno</p>
+                        <div class="img" style="background-image: url(./multimedia/producto/vacuno/asado-new.jpg);" alt="asado, costilla vacuna">
                         </div>
+                        <p class="title">
+                            Tira de asado.
+                        </p>
+                        <p class="description">
+                            El asadito de todos los domingos.
+                        </p>
+                        <p class="price">
+                            $1.200 /kg
+                        </p>
+                        <button>
+                            <a href="/pages/404.html" target="_blank">comprar</a>
+                        </button>
                     </article>
                     <article class="producto">
-                        <div><a href="/pages/404.html" target="_blank"></a><img src="./multimedia/producto/vacuno/bife-ancho_1.jpg" alt="bifeAncho"></a>
-                            <h5>Bife Ancho</h5>
-                            <p>$850 /kg</p>
-                            <p class="tipo">asado vacuno</p>
+                        <div class="img" style="background-image: url(./multimedia/producto/vacuno/bife-ancho_1.jpg);" alt="bife Ancho"> 
                         </div>
+                        <p class="title">
+                            Bife ancho
+                        </p>
+                        <p class="description">
+                            A la plancha bien caliente, sal y más nada. 
+                        </p>
+                        <p class="price">
+                            $850 /kg
+                        </p>
+                        <button>
+                            <a href="/pages/404.html" target="_blank">comprar</a>
+                        </button>
                     </article>
                     <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/vacuno/colita_4.jpg" alt="cuadril"></a>
-                    <h5>Colita de Cuadril</h5>
-                    <p>$950 /kg</p>
-                    <p class="tipo">asado vacuno</p>
+                        <div class="img" style="background-image: url(./multimedia/producto/vacuno/colita_4.jpg);" alt="colita de cuadril"> 
                 </div>
+                <p class="title">
+                    Cuadril.
+                </p>
+                <p class="description">
+                    La mejor elección. 
+                </p>
+                <p class="price">
+                    $950 /kg
+                </p>
+                <button>
+                    <a href="/pages/404.html" target="_blank">comprar</a>
+                </button>
             </article>
             <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/vacuno/cuadrada_1.jpg" alt="cuadrada"></a>
-                    <h5>Cuadrada</h5>
-                    <p>$820 /kg</p>
-                    <p class="tipo">asado vacuno</p>
+                <div class="img" style="background-image: url(./multimedia/producto/vacuno/cuadrada_1.jpg);" alt="cuadrada vacuna"> 
                 </div>
+                <p class="title">
+                    Cuadrada
+                </p>
+                <p class="description">
+                    Para milanesa o molida. 
+                </p>
+                <p class="price">
+                    $820 /kg
+                </p>
+                <button>
+                    <a href="/pages/404.html" target="_blank">comprar</a>
+                </button>
             </article>
             <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/vacuno/roast-beef_1.jpg" alt="RoastBeef"></a>
-                    <h5>Roast Beef</h5>
-                    <p>$1.200 /kg</p>
-                    <p class="tipo">asado vacuno</p>
+                <div class="img" style="background-image: url(./multimedia/producto/vacuno/roast-beef_1.jpg);" alt="RoastBeef"> 
                 </div>
+                 <p class="title">
+                    Roast Beef
+                </p>
+                <p class="description">
+                    Quien pudiera. 
+                </p>
+                <p class="price">
+                    $1.200 /kg
+                </p>
+                <button>
+                    <a href="/pages/404.html" target="_blank">comprar</a>
+                </button>
             </article>            
             <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/vacuno/vacio_2.jpg" alt="vacio"></a>
-                    <div class="desc">
-                        <h5>Vacio</h5>
-                        <p>$1.000 /kg</p>
-                        <p class="tipo">asado vacuno</p>
+                <div class="img" style="background-image: url(./multimedia/producto/vacuno/vacio_2.jpg);" alt="vacio vacuno"> 
                     </div>
+                    <p class="title">
+                        Vacio
+                    </p>
+                    <p class="description">
+                        De vacio solo tiene el nombre. 
+                    </p>
+                    <p class="price">
+                        $1.000 /kg
+                    </p>
+                    <button>
+                        <a href="/pages/404.html" target="_blank">comprar</a>
+                    </button>
                 </article>
                 <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/aves/brochete-pollo.jpg" alt="brochetes" id="Aves"></a>
-                    <h5>brochetes</h5>
-                    <p>$1.200 /kg</p>
-                    <p class="tipo">pollo</p>
+                    <div class="img" style="background-image: url(./multimedia/producto/aves/brochete-pollo.jpg);" alt="brochetes"> 
                 </div>
+                <p class="title">
+                    Brochetes
+                </p>
+                <p class="description">
+                    De pollo y cerdo, ¡pedilos!.
+                </p>
+                <p class="price">
+                    $1.400 /kg
+                </p>
+                <button>
+                    <a href="/pages/404.html" target="_blank">comprar</a>
+                </button>
             </article>
             <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/aves/churrasquito-pollo.jpg" alt="pollo"></a>
-                    <h5>Churrasquito de pollo</h5>
-                    <p>$500 /kg</p>
-                    <p class="tipo">contramuslo deshuesado</p>
+                <div class="img" style="background-image: url(./multimedia/producto/aves/churrasquito-pollo.jpg);" alt="contramuslo deshuesado"> 
                 </div>
+                <p class="title">
+                    Churrasquito de pollo
+                </p>
+                <p class="description">
+                    contramuslo deshuesado, tremendo.
+                </p>
+                <p class="price">
+                    $500 /kg
+                </p>
+                <button>
+                    <a href="/pages/404.html" target="_blank">comprar</a>
+                </button>
             </article>
             <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/aves/nuggets_1.jpg" alt="pollo"></a>
-                    <h5>Nuggets de Pollo</h5>
-                    <p>$700 /kg</p>
-                    <p class="tipo">pollo</p>
+                <div class="img" style="background-image: url(./multimedia/producto/aves/nuggets_1.jpg);" alt="mamí quiero  más patitas"> 
                 </div>
+                <p class="title">
+                    Nuggets de Pollo
+                </p>
+                <p class="description">
+                    Los chicos SIEMPRE quieren más. 
+                </p>
+                <p class="price">
+                    $700 /kg
+                </p>
+                <button>
+                    <a href="/pages/404.html" target="_blank">comprar</a>
+                </button>
             </article>
             <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/aves/pata-muslo.jpg" alt="pollo"></a>
-                    <h5>Pata y muslo</h5>
-                    <p>$800 /kg</p>
-                    <p class="tipo">pollo</p>
+                <div class="img" style="background-image: url(./multimedia/producto/aves/pata-muslo.jpg);" alt="pata muslo papá"> 
                 </div>
+                <p class="title">
+                    Pata y muslo
+                </p>
+                <p class="description">
+                    Directo a la parrilla. 
+                </p>
+                <p class="price">
+                    $800 /kg
+                </p>
+                <button>
+                    <a href="/pages/404.html" target="_blank">comprar</a>
+                </button>
             </article>
             <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/aves/pollo-entero.jpg" alt="pollo"></a>
-                    <h5>Pollo de granja</h5>
-                    <p>$1.000 /kg</p>
-                    <p class="tipo">pollo</p>
+                <div class="img" style="background-image: url(./multimedia/producto/aves/pollo-entero.jpg);" alt="pollo entero de chacra">
                 </div>
+                <p class="title">
+                    Pollo de granja
+                </p>
+                <p class="description">
+                    Con esencia a chacra del abuelo.
+                </p>
+                <p class="price">
+                    $1.000 /kg
+                </p>
+                <button>
+                    <a href="/pages/404.html" target="_blank">comprar</a>
+                </button>
             </article>
             <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/aves/supremas-2.jpg" alt="pollo"></a>
-                    <h5>Supremas de pollo</h5>
-                    <p>$900 /kg</p>
-                    <p class="tipo">pollo</p>
+                <div class="img" style="background-image: url(./multimedia/producto/aves/supremas-2.jpg);" alt="supremas de pollo">
                 </div>
+                <p class="title">
+                    Supremas de pollo
+                </p>
+                <p class="description">
+                    Rico, rápido y economico.
+                </p>
+                <p class="price">
+                    $700 /kg
+                </p>
+                <button>
+                    <a href="/pages/404.html" target="_blank">comprar</a>
+                </button>
             </article>
             <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/cerdo/bondiola_2.jpg" alt="bondiola" id="cerdo"></a>
-                    <h5>Bondiolita</h5>
-                    <p>$1.200 /kg</p>
-                    <p class="tipo">cerdo</p>
+                <div class="img" style="background-image: url(./multimedia/producto/cerdo/bondiola_2.jpg);" alt="bondiolita">
                 </div>
+                <p class="title">
+                    Bondiola
+                </p>
+                <p class="description">
+                    Aflorando los recuerdos en la costanera.
+                </p>
+                <p class="price">
+                    $1.200 /kg
+                </p>
+                <button>
+                    <a href="/pages/404.html" target="_blank">comprar</a>
+                </button>
             </article>
             <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/cerdo/carre-deshuesado.jpg" alt="cerdo"></a>
-                    <h5>Carré deshuesado</h5>
-                    <p>$1.500 /kg</p>
-                    <p class="tipo">cerdo</p>
+                <div class="img" style="background-image: url(./multimedia/producto/cerdo/carre-deshuesado.jpg);" alt="carré para disfrutar">
                 </div>
+                <p class="title">
+                    Carré deshuesado
+                </p>
+                <p class="description">
+                    Ese carré no se preparará solo.
+                </p>
+                <p class="price">
+                    $1.500 /kg
+                </p>
+                <button>
+                    <a href="/pages/404.html" target="_blank">comprar</a>
+                </button>
             </article>
             <article class="producto">
-                <div><a href="/pages/404.html" target="_blank"><img src="./multimedia/producto/cerdo/matambre_1.jpg" alt="cerdo"></a>
-                    <h5>Matambrito de cerdo</h5>
-                    <p>$1.800 /kg</p>
-                    <p class="tipo">cerdo</p>
+                <div class="img" style="background-image: url(./multimedia/producto/cerdo/matambre_1.jpg);" alt="matambrito, riquisimo con limón">
                 </div>
+                <p class="title">
+                    Matambre de cerdo.
+                </p>
+                <p class="description"> 
+                    Una delicia. 
+                </p>
+                <p class="price">
+                    $1.800 /kg
+                </p>
+                <button>
+                    <a href="/pages/404.html" target="_blank">comprar</a>
+                </button>
             </article>
         </section>
         </main>
         <footer class="footer">
             <ul>
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="/multimedia/iconos/facebook.png" alt="facebook CARNIVORE" ></a></li>
-                <li><a href="https://www.instagram.com/ "target="_blank"><img src="/multimedia/iconos/instagram.png" alt="instagram CARNIVORE" ></a></li>
-                <li><a href="https://www.twitter.com/" target="_blank"><img src="/multimedia/iconos/twitter.png" alt="Twitter CARNIVORE" ></a></li>
-                <li><a href="https://www.linkedin.com/" target="_blank"><img src="/multimedia/iconos/linkedin.png" alt="linkedin CARNIVORE" ></a></li>
-                <li><a href="https://www.webwhatsapp.com/" target="_blank"><img src="/multimedia/iconos/whatsapp.png" alt="whatsapp CARNIVORE" ></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"> Facebook</i></a></li>
+                <li><a href="https://www.instagram.com/ "target="_blank"><i class="bi bi-instagram"> Instagram</i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"> LinkedIn</i></a></li>
+                <li><a href="https://www.webwhatsapp.com/" target="_blank"><i class="bi bi-whatsapp"> Whatsapp</i></a></li>
+                <p class="bi footerp">Todos los derechos reservados por CARNIVORE® Una empresa de vacas y otros animales </p>
+                <a href="#top"><i class="bi bi-caret-up-fill">Hacia el cielo</i></a>
             </ul>
+
            
         </footer>
         

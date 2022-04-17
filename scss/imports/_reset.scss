@@ -16,9 +16,7 @@ body {
      z-index: -5;
 }
 
-.contenedor {
-    display: grid;
-    grid-template-rows: r 4fr 40vh;
+ .contenedor {
     width: 90%;
     align-items: center;
     text-align: center;
@@ -26,14 +24,10 @@ body {
     margin: 2rem auto;
     padding-left: 0rem;
     background-color: $WHITY;
-    grid-template-areas: 
-    "nav"
-    "productomain"
-    "footer"    ;
-    border-radius: 1.5rem;
+    border-radius: 0.5rem;
     box-shadow: 2vh 2vh 5vh $BLACKY;
-    }
-  
+    } 
+
     a {text-decoration: none;
     }
     ul {list-style: none;}

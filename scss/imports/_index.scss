@@ -1,36 +1,124 @@
-.listaproducto {
-    width: 100%;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    height: 60vh;
-    overflow: auto;
-            article p {
-                    font-size: 1.2rem;
-                    }
- }
  
+/// EComerce
 
-.producto div img {
-    width: 30vh;
-    height: auto;
-    align-items: start;
-    border: 0.2rem $CARNE solid;
-    &:hover {
-        border: $CARNE dashed 0.3rem;
-        background-color: azure;
-        transform: scale(1.1);
-        transition: all 0.3s ease;
-        }
-    }  
+.listaproducto {
+    margin-top: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.8rem;
+    max-height: 600px;
+    overflow: auto;
+}
+
+
+@media (max-width: 1000px) {
+    .listaproducto {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 620px) {
+    .listaproducto {
+        grid-template-columns: 1fr;
+    }
+}
+
+.producto {
+    border-radius: 0.2rem;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+     
+.img {
+    width: auto;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+    .title {
+        font-size: 1.7rem;
+        color: $BLACKY;
+        font-family: $LOGO;
+        
+    }
     
-       .padre .producto div p {
-           font-size: 0.9rem;
-           color: rgb(8, 8, 8);
+    .description {
+        color: $BLACKY;
+        font-size: 1rem;
+        font-family: $TEXT;
+    }
+    
+     .price {
+        font-size: 1.7rem;
+        color: $BLACKY;
+        font-family: $LOGO;;
+    }
+    &:hover {
+        background-image: url(/multimedia/svg/productoshuesos.svg);
+        border: 0.2rem dashed $CARNE;
+        background-size: cover;
+        background-position: center
+    }
+
+}
+
+
+button {
+    outline: none;
+    background: $CARNE;
+    font-family: $LOGO;
+    color: $BLACKY;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    
+       & a:visited {
+           text-decoration: none;
+           color: $BLACKY;
+           background: $CARNE;
        }
-       
+       &:hover {
+        background: $BLACKY;
+        text-decoration: none;
+         a {
+            color:$WHITY;
+         }
+        }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //NOSOTROS
+
        .AboutUs {
                 align-items: center;
                 width: 80%;
