@@ -1,16 +1,39 @@
 
-.receta  {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-      font-size: 1rem;
-    margin: 20px 20px;
-   }
-   .receta .imagen a img {
-       width: 30vh;
-       height: auto;
-       align-items: start;
-       border: 1px #D51C29 solid;
-   }
+.recetas  {
+
+  @extend .listaproducto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin: 1rem auto;
+  height: 400px;
+  
+
+}
+
+@media (max-width: 1000px) {
+  .recetas {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .recetas {
+      grid-template-columns: 1fr;
+  }
+}
+
+.receta__item {
+    @extend .producto;
+         &__imagen {
+           @extend .img;
+         }
+        &__titulo {
+          @extend .title;
+        }
+        &__text {
+          @extend .description;
+        }
+
+        }
    
 

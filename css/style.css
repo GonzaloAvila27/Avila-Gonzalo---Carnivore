@@ -76,7 +76,7 @@ h5 {
   font-size: 2rem;
 }
 
-.padre .producto div p {
+.padre .producto div p, .padre .receta__item div p {
   font-size: 0.9rem;
   color: #000000;
 }
@@ -138,34 +138,34 @@ label {
   }
 }
 
-.listaproducto {
+.listaproducto, .recetas {
   margin-top: 20px;
   max-width: 1800px;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.8rem;
   max-height: 600px;
   overflow: auto;
 }
 
 @media (max-width: 1000px) {
-  .listaproducto {
+  .listaproducto, .recetas {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 620px) {
-  .listaproducto {
+  .listaproducto, .recetas {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
 }
 
-.producto {
+.producto, .receta__item {
   border-radius: 0.2rem;
   overflow: hidden;
   text-align: center;
@@ -173,32 +173,32 @@ label {
           box-sizing: border-box;
 }
 
-.producto .img {
+.producto .img, .receta__item .img, .producto .receta__item__imagen, .receta__item .receta__item__imagen {
   width: auto;
   height: 200px;
   background-size: cover;
   background-position: center;
 }
 
-.producto .title {
+.producto .title, .receta__item .title, .producto .receta__item__titulo, .receta__item .receta__item__titulo {
   font-size: 1.7rem;
   color: #000000;
   font-family: "Ultra", serif;
 }
 
-.producto .description {
+.producto .description, .receta__item .description, .producto .receta__item__text, .receta__item .receta__item__text {
   color: #000000;
   font-size: 1rem;
   font-family: "Anton", sans-serif;
 }
 
-.producto .price {
+.producto .price, .receta__item .price {
   font-size: 1.7rem;
   color: #000000;
   font-family: "Ultra", serif;
 }
 
-.producto:hover {
+.producto:hover, .receta__item:hover {
   background-image: url(/multimedia/svg/productoshuesos.svg);
   border: 0.2rem dashed #D51C29;
   background-size: cover;
@@ -269,27 +269,26 @@ button:hover a {
   background-color: #D51C29;
 }
 
-.receta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 1rem;
-  margin: 20px 20px;
+.recetas {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin: 1rem auto;
+  height: 400px;
 }
 
-.receta .imagen a img {
-  width: 30vh;
-  height: auto;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  border: 1px #D51C29 solid;
+@media (max-width: 1000px) {
+  .recetas {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .recetas {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 footer ul {
