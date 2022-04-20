@@ -147,7 +147,7 @@ label {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.8rem;
-  max-height: 600px;
+  max-height: 1200px;
   overflow: auto;
 }
 
@@ -274,7 +274,7 @@ button:hover a {
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin: 1rem auto;
-  height: 400px;
+  height: 1000px;
 }
 
 @media (max-width: 1000px) {
