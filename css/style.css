@@ -81,6 +81,24 @@ h5 {
   color: #000000;
 }
 
+hr {
+  margin-top: 3rem;
+  border: 0.5rem dashed #D51C29;
+}
+
+.titulos {
+  font-size: 2rem;
+  font-family: "Ultra", serif;
+  color: #D51C29;
+}
+
+.titulosmain {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Ultra", serif;
+  color: #000000;
+}
+
 .nav {
   height: 70px;
   line-height: 70px;
@@ -147,14 +165,14 @@ label {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.8rem;
-  max-height: 1200px;
-  overflow: auto;
 }
 
 @media (max-width: 1000px) {
   .listaproducto, .recetas {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    max-height: 800px;
+    overflow: auto;
   }
 }
 
@@ -162,6 +180,8 @@ label {
   .listaproducto, .recetas {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    max-height: 600px;
+    overflow: auto;
   }
 }
 
@@ -291,8 +311,93 @@ button:hover a {
   }
 }
 
-footer ul {
-  top: 100%;
+.receta__item {
+  height: 22.5rem;
+  overflow: auto;
+}
+
+.papi {
+  margin-top: 20px;
+  max-width: 1800px;
+  max-height: 1000px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.8rem;
+      grid-template-areas: "tit tit" "body sideb" "consej consej";
+  overflow: auto;
+}
+
+.papi__titulos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: tit;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  line-height: 250px;
+}
+
+.papi__cuerpo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: body;
+  height: auto;
+  margin: 0 10%;
+  text-align: left;
+  background-image: url(/multimedia/svg/productoshuesos.svg);
+}
+
+.papi__sidebar {
+  text-align: left;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: sideb;
+  height: auto;
+}
+
+.papi__sidebar .bi {
+  font-size: 2rem;
+  font-family: "Ultra", serif;
+  color: #D51C29;
+}
+
+.papi__consejos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: consej;
+  height: auto;
+  -webkit-font-kerning: 1px;
+          font-kerning: 1px;
+  width: 80%;
+  margin: 0 10%;
+}
+
+@media screen and (max-width: 800px) {
+  .papi {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "tit" "consej"  "body"  "sideb";
+    max-height: 600px;
+    overflow: auto;
+  }
+}
+
+.footer {
+  background-color: #D51C29;
+  height: 6rem;
+}
+
+.footer ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,9 +410,8 @@ footer ul {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   border-radius: 3%;
-  background-color: #D51C29;
   margin-top: 3%;
-  height: 5rem;
+  height: 6rem;
   padding-bottom: 15px;
   overflow: auto;
 }
@@ -319,7 +423,8 @@ footer ul {
   line-height: 2;
 }
 
-.footerp {
+.footer p {
+  line-height: 5rem;
   text-align: center;
   margin-top: 0.09rem;
 }

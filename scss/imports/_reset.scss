@@ -73,3 +73,19 @@ h5 {
        color: $BLACKY;
    }
    
+hr {
+    margin-top: 3rem;
+    border: 0.5rem dashed $CARNE;
+}
+
+.titulos {
+    font-size: 2rem;
+    font-family: $LOGO;
+    color: $CARNE;
+}
+.titulosmain {
+    font-size: 3rem;
+    text-align: center;
+    font-family: $LOGO;
+    color: $BLACKY;
+}

@@ -1,17 +1,23 @@
-footer ul {
-    top: 100%;
+
+
+
+
+.footer {
+    background-color: $CARNE;
+    height: 6rem;
+        ul {
+    //line-height: 1rem;
     list-style: none;
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
     border-radius: 3%;
-    background-color: $CARNE;
     margin-top: 3%;
-    height: 5rem;
+    height: 6rem;
     padding-bottom:15px ;
     overflow: auto;
+            }
 }
-
 
 .bi {
     font-family: $TEXT;
@@ -20,9 +26,11 @@ footer ul {
     line-height: 2;
 }
 
-.footerp {
+.footer p {
+    line-height: 5rem;
     text-align: center;
     margin-top: 0.09rem;
+
 }
 
 .bi-facebook {

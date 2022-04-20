@@ -1,0 +1,76 @@
+
+
+
+
+
+
+.papi {
+    margin-top: 20px;
+    max-width: 1800px;
+    max-height: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0.8rem;
+    grid-template-areas:
+    "tit tit"
+    "body sideb"
+    "consej consej" 
+    ;
+    overflow: auto;
+
+
+        &__titulos {
+            grid-area: tit;
+            width: auto;
+           // height: 200px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            line-height: 250px;       
+        }
+
+        &__cuerpo {
+            grid-area: body;
+            height: auto;
+            margin: 0 10%;
+            text-align: left;
+            background-image: url(/multimedia/svg/productoshuesos.svg);
+        }
+
+        &__sidebar {
+            text-align: left;
+            grid-area: sideb;
+            height: auto;
+                .bi {
+                    font-size: 2rem;
+                    font-family: $LOGO;
+                    color: $CARNE;
+                }
+               
+        }
+        &__consejos {
+            grid-area: consej;
+            height: auto;
+            font-kerning: 1px;
+            width: 80%;
+            margin: 0 10%;
+        }
+
+    }
+
+    @media screen and (max-width: 800px) {
+        .papi {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                "tit"
+                "consej" 
+                "body" 
+                "sideb"
+                ;
+            max-height: 600px;
+            overflow: auto;
+        }
+    }

@@ -8,20 +8,22 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.8rem;
-    max-height: 1200px;
-    overflow: auto;
 }
 
 
 @media (max-width: 1000px) {
     .listaproducto {
         grid-template-columns: repeat(2, 1fr);
+        max-height: 800px;
+        overflow: auto;
     }
 }
 
 @media (max-width: 620px) {
     .listaproducto {
         grid-template-columns: 1fr;
+        max-height: 600px;
+        overflow: auto;
     }
 }
 

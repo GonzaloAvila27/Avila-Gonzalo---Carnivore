@@ -24,6 +24,9 @@
 
 .receta__item {
     @extend .producto;
+    height: 22.5rem;
+    overflow: auto;
+
          &__imagen {
            @extend .img;
          }
