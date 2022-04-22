@@ -30,34 +30,23 @@
             </div>
             </nav>
     </header>
-    <main>
-        <fieldset>
-        <legend> ¿Tenes una consulta? </legend>
-                <form action="">
-                    <div>
-                        <label for="Name">tu nombre</label>
-                        <input type="text" nname="Nombre" placeholder="Marcelo">    
-                    </div>
-                    <div>
-                        <label for="Name">Email</label>
-                        <input type="email" name="email" required placeholder=" novillito@gmail.com">
-                    </div>
-                    <div>
-                        <label for="color">Tu color favorito</label>
-                         <input type="color" name="color">
-                    </div>
-                    <div>
-                        <textarea name="Opinion" id="" cols="50" rows="20">Escribe</textarea>
-                    </div>
-                <br>
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
-                    </div>
-                </form>
-        </fieldset>
-    </main>
-    <hr>
+<main>
+    <div class="formulario">
+        <div class="formulario__box">
+        <div class="formulario__box__izq"><img src="/multimedia/producto/cerdo/carre-deshuesado.jpg" alt=""></div>   
+        <div class="formulario__box__derech">
+            <h2>Contactanos</h2>
+            <input type="text" class="formulario__box__derech__area" placeholder="Tu nombre">    
+                    
+            <input type="email" class="formulario__box__derech__area" name="email" required placeholder="Tu Email">
+                    
+            <textarea name="Opinion" class="formulario__box__derech__area" placeholder="Por favor, escribe tu mensaje aquí"></textarea>
+
+            <button class="formulario__box__derech__btn">Enviar</button>
+
+        </div>
+    </div>
+</main>
 </div>
 <footer class="footer">
     <ul>

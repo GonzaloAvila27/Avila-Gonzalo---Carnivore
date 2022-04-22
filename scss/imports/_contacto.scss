@@ -1,0 +1,72 @@
+.formulario {
+   position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px; 
+        &__box {
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: $WHITY;
+                &__izq {
+                        img {
+                                background-size: cover;
+                                height: 500px;
+                                border: 1rem solid $CARNE; ;
+                                
+                            }
+                }
+                &__derech {
+                    padding: 25px 40px;
+                    background-image: url(/multimedia/svg/fondohuesos.svg);
+                
+                        h2 {
+                            position: relative;
+                            padding-bottom: 1rem;
+                            margin-bottom: 1rem;
+                            font-family: $LOGO;
+                            color: #fff;
+                            background-color: $BLACKY;
+                            border-radius: 5%;
+                            height: 40px;
+                            line-height: 40px;
+                        }
+                    &__area {
+                        width: 100%;
+                        padding: 0.5rem 1rem;
+                        background-color: $BLACKY;
+                        font-size: 1.1rem;
+                        font-family: $TEXT  ;
+                        margin-bottom: 22px;
+                        transition: 1.1s;
+                        border: 0.5rem solid $CARNE;
+                    }
+                    &__area:hover {
+                        background-image: url(/multimedia/svg/productoshuesos.svg);
+                    }
+                    &__btn {
+                        width: 100%;
+                        padding: 0.5rem 1rem;
+                        background-color: $BLACKY;
+                        color: #fff;
+                        font-size: 1.1rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        transition: .3s;
+                    }
+                    
+                    .btn:hover{
+                        background-color: #27ae60;
+                    }
+                    
+                }
+        }
+}
+
