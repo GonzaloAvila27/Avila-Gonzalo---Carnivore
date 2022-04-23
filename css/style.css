@@ -90,15 +90,31 @@ hr {
 }
 
 .titulos {
-  font-size: 2rem;
+  font-size: 5vh;
   font-family: "Ultra", serif;
-  color: #D51C29;
+  color: #000000;
+  line-height: 20vh;
+  text-align: center;
+  background-image: url(/multimedia/svg/portada.svg);
+  background-color: #D51C29;
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 780px) {
+  .titulos .titulos h1 {
+    display: none;
+  }
 }
 
 .nav {
   height: 70px;
   line-height: 70px;
   margin-bottom: 1%;
+  z-index: 25;
 }
 
 .navegador {
@@ -127,6 +143,7 @@ label {
   display: none;
   color: #fffed9;
   background-color: #D51C29;
+  z-index: 14;
 }
 
 #toggle {
@@ -137,6 +154,7 @@ label {
   label {
     display: block;
     cursor: pointer;
+    z-index: 254;
   }
   .navegador {
     text-align: center;
@@ -149,6 +167,7 @@ label {
   }
   #toggle:checked + .navegador {
     display: inline-block;
+    z-index: 25;
   }
 }
 
@@ -356,12 +375,13 @@ button:hover a {
   -ms-grid-column: 2;
   grid-area: sideb;
   height: auto;
+  padding: 10%;
 }
 
 .papi__sidebar .bi {
   font-size: 2rem;
   font-family: "Ultra", serif;
-  color: #D51C29;
+  color: #000000;
 }
 
 .papi__consejos {
@@ -389,7 +409,6 @@ button:hover a {
 }
 
 .formulario {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,6 +529,7 @@ button:hover a {
   text-align: center;
   background-color: #fffed9;
   height: 500px;
+  overflow: auto;
 }
 
 .ABus__izquierda {
@@ -518,7 +538,6 @@ button:hover a {
 
 .ABus__izquierda .nosotrosTexto {
   padding: 20px;
-  border: 4px solid #0004f5;
   width: 100%;
   font-size: 1.5rem;
   -webkit-font-kerning: 5px;

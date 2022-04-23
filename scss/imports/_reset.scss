@@ -82,9 +82,24 @@ hr {
 }
 
 
-
 .titulos {
-    font-size: 2rem;
+    font-size: 5vh;
     font-family: $LOGO;
-    color: $CARNE;
+    color: $BLACKY;
+    line-height: 20vh;
+    text-align: center;
+    //PORTADA TITULOS MENORES
+    background-image: url(/multimedia/svg/portada.svg);
+    background-color: $CARNE;
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    overflow: hidden;
+
+    @media screen and (max-width: 780px) {
+        .titulos h1{
+            display: none;
+    }
+} 
 }

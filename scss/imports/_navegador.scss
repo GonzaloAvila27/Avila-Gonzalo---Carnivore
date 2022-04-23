@@ -7,6 +7,7 @@
             height: 70px;
             line-height: 70px;
             margin-bottom: 1%;
+            z-index: 25;
     }
 
 
@@ -36,6 +37,7 @@ label {
     display: none;
     color: $WHITY;
     background-color: $CARNE;
+    z-index: 14;
 }
 #toggle {
     display: none;
@@ -45,6 +47,7 @@ label {
     label {
         display: block;
         cursor: pointer;
+        z-index: 254;
           }
     .navegador {
         text-align: center;
@@ -57,6 +60,7 @@ label {
     }
     #toggle:checked + .navegador {
         display: inline-block;
+        z-index: 25;
     }
 
 }
