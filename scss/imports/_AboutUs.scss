@@ -1,0 +1,46 @@
+.portadaA {
+    background-image: url(/multimedia/svg/portada.svg);
+    background-color: $CARNE;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    
+}
+
+
+.ABus {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: $WHITY;
+      height: 500px;
+          &__izquierda {
+                height: 100%;
+                  .nosotrosTexto {
+                      padding: 20px;
+                      border: 4px solid rgb(0, 4, 245);
+                      width: 100%;
+                      font-size: 1.5rem;
+                      font-kerning: 5px;
+                      text-align: justify;                    }
+          }
+
+          &__derecha {
+           background-image: url(/multimedia/svg/carnivorecarbonB.svg);
+            background-position: center;
+            overflow: hidden;
+            height: 100%;
+          }
+      }
+.titulosmain {
+  line-height: 200px;
+  font-size: 5rem;
+  text-align: center;
+  font-family: $LOGO;
+  color: $BLACKY;
+  filter: drop-shadow(3px 1px 1px rgba(255, 255, 255, 0.363));
+  
+}
+

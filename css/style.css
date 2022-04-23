@@ -29,6 +29,9 @@ body {
   margin: 2rem auto;
   padding-left: 0rem;
   background-color: #fffed9;
+  background-image: url(/multimedia/svg/fondodiscreto.svg);
+  background-position: center;
+  background-size: cover;
   border-radius: 0.5rem;
   -webkit-box-shadow: 2vh 2vh 5vh #000000;
           box-shadow: 2vh 2vh 5vh #000000;
@@ -90,13 +93,6 @@ hr {
   font-size: 2rem;
   font-family: "Ultra", serif;
   color: #D51C29;
-}
-
-.titulosmain {
-  font-size: 3rem;
-  text-align: center;
-  font-family: "Ultra", serif;
-  color: #000000;
 }
 
 .nav {
@@ -294,7 +290,7 @@ button:hover a {
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin: 1rem auto;
-  height: 1000px;
+  height: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -492,12 +488,68 @@ button:hover a {
   }
 }
 
+.portadaA {
+  background-image: url(/multimedia/svg/portada.svg);
+  background-color: #D51C29;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
+.ABus {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #fffed9;
+  height: 500px;
+}
+
+.ABus__izquierda {
+  height: 100%;
+}
+
+.ABus__izquierda .nosotrosTexto {
+  padding: 20px;
+  border: 4px solid #0004f5;
+  width: 100%;
+  font-size: 1.5rem;
+  -webkit-font-kerning: 5px;
+          font-kerning: 5px;
+  text-align: justify;
+}
+
+.ABus__derecha {
+  background-image: url(/multimedia/svg/carnivorecarbonB.svg);
+  background-position: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.titulosmain {
+  line-height: 200px;
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Ultra", serif;
+  color: #000000;
+  -webkit-filter: drop-shadow(3px 1px 1px rgba(255, 255, 255, 0.363));
+          filter: drop-shadow(3px 1px 1px rgba(255, 255, 255, 0.363));
+}
+
 .footer {
   background-color: #D51C29;
   height: 6rem;
 }
 
 .footer ul {
+  bottom: 0;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;

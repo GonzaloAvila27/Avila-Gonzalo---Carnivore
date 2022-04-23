@@ -24,6 +24,9 @@ body {
     margin: 2rem auto;
     padding-left: 0rem;
     background-color: $WHITY;
+    background-image: url(/multimedia/svg/fondodiscreto.svg);
+    background-position: center;
+    background-size: cover;
     border-radius: 0.5rem;
     box-shadow: 2vh 2vh 5vh $BLACKY;
     } 
@@ -78,14 +81,10 @@ hr {
     border: 0.5rem dashed $CARNE;
 }
 
+
+
 .titulos {
     font-size: 2rem;
     font-family: $LOGO;
     color: $CARNE;
-}
-.titulosmain {
-    font-size: 3rem;
-    text-align: center;
-    font-family: $LOGO;
-    color: $BLACKY;
 }
