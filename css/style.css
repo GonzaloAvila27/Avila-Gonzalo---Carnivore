@@ -424,10 +424,11 @@ button:hover a {
   background-color: #fffed9;
 }
 
-.formulario__box__izq img {
+.formulario__box__izq {
+  background-image: url(/multimedia/svg/carnivorecarbonB.svg);
   background-size: cover;
-  height: 500px;
-  border: 1rem solid #D51C29;
+  background-position: center;
+  height: 440px;
 }
 
 .formulario__box__derech {
@@ -457,10 +458,11 @@ button:hover a {
   -webkit-transition: 1.1s;
   transition: 1.1s;
   border: 0.5rem solid #D51C29;
+  color: #fffed9;
 }
 
 .formulario__box__derech__area:hover {
-  background-image: url(/multimedia/svg/productoshuesos.svg);
+  background-color: #D51C29;
 }
 
 .formulario__box__derech__btn {
@@ -478,6 +480,16 @@ button:hover a {
 
 .formulario__box__derech .btn:hover {
   background-color: #27ae60;
+}
+
+@media screen and (max-width: 880px) {
+  .formulario__box {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .formulario__box__izq {
+    height: 240px;
+  }
 }
 
 .footer {
