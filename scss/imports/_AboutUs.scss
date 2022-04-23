@@ -35,12 +35,35 @@
           }
       }
 .titulosmain {
+  overflow: hidden;
   line-height: 200px;
   font-size: 5rem;
   text-align: center;
   font-family: $LOGO;
   color: $BLACKY;
   filter: drop-shadow(3px 1px 1px rgba(255, 255, 255, 0.363));
-  
+  z-index: -1;
 }
 
+@media screen and (max-width: 821px){
+	.ABus{
+		grid-template-columns: 1fr;
+    height: auto;
+	}
+	.ABus__derecha{
+		height: 240px;
+	}
+  .titulosmain {
+    font-size: 3rem;
+    line-height: 100px;
+  }
+  .portadaA {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 620px){
+  .titulosmain {
+    display: none;
+  }
+
+}
